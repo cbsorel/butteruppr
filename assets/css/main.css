@@ -1,0 +1,332 @@
+  
+.startHidden {
+	display: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+/* HEADER */
+
+.navBar {
+	display: grid;
+	grid-template-columns: 27% 73%;
+	margin: 5px 0 0 0;
+
+}
+
+.navBox {
+	display: inline;
+}
+
+ul {
+	display: inline-block;
+}
+
+.navBox li {
+	margin-bottom: -30px;
+}
+.navBox p {
+	margin-top: -5%;
+	font-family: 'Abel', sans-serif;
+	font-size: 1.3em;
+	color: #61c6bc;
+	text-transform: uppercase;
+	width: auto;
+}
+
+.linkBox {
+	font-size: .5em;
+	display: inline-block;
+	text-align: center;
+}
+
+
+.navBar img {
+	width: 140px;
+	display: inline-block;
+	padding-left: 10px;
+}
+
+.navBar div {
+	display: inline-block;
+}
+
+.right {
+	text-align: right;
+	padding-right: 10px;
+}
+
+.navBox i {
+	color: #61c6bc;
+	padding: 10px;
+}
+
+.socialBar {
+	background-color: #333435;
+}
+
+.socialBarMedia {
+	color: white;
+	padding: 5px;
+}
+
+#socialMediaIcons {
+	text-align: center;
+}
+
+#contact {
+	display: none;
+}
+
+
+
+/* MAIN */
+
+.main {
+	background-image: url("https://butteruppr.com/wp-content/uploads/2018/06/DSC040432.jpg");
+	background-position: bottom left 95%;
+	background-repeat: no-repeat;
+	margin: -10px 0 0 0;
+	overflow: visible;
+	background-size: cover;
+}
+
+.mainContainer {
+	display: none;
+}
+
+.mainContainer h1 {
+	text-transform: uppercase;
+	margin-bottom: -15px;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	padding-left: 10%;
+	font-size: 1.5rem;
+}
+
+.mainContainer h3 {
+	text-transform: uppercase;
+	padding-top: 5%;
+	margin-bottom: -5px;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	padding-left: 10%;
+}
+
+button {
+	background-color: transparent;
+    border: solid black 2px;
+	border-radius: 7px;
+    color: black;
+	margin-top: 40px;
+    margin-left: 10%;
+    margin-bottom: 100%;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Abel';
+}
+
+.pageMain {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+
+.pageHeader {
+	margin: 0 0 0 0;
+	text-transform: uppercase;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.servicesHeader {
+	display: none;
+	font-family: 'Abel';
+	background-color: #61c6bc;
+	border-radius: 10px;
+}
+
+.servicesHeader p {
+	padding: 10px;
+}
+
+.serviceBox {
+	text-align: center;
+	border: solid 2px black;
+	border-radius: 10px;
+	margin: 15px;
+}
+
+.serviceBox h3 {
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.serviceBox ul {
+	text-align: left;
+	margin: 0 -2% 10% -10%;
+	font-family: 'Abel', sans-serif;
+}
+
+.contact {
+	margin: 3% 0 0 0;
+}
+
+input {
+	margin: 10px;
+}
+
+/* ~~~~~~~~~~~~~            ~~~~~~~~~~~~~  */
+/* ~~~~~~~~~~~~~ RESPONSIVE ~~~~~~~~~~~~~  */
+/* ~~~~~~~~~~~~~            ~~~~~~~~~~~~~  */
+
+ @media screen and (min-width: 500px) {
+	
+	.startHidden {
+		font-size: .5em;
+		display: inline-block;
+		text-align: center;
+	}
+	
+	.active {
+		border-bottom: solid 3px #61c6bc;
+	 }
+	 
+	.socialBar {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		height: 35px;
+		line-height: 35px;
+	}
+
+	.socialBarMedia {
+		color: white;
+		padding: 5px;
+	}
+	
+	.socialBar p {
+		display: inline;
+		font-family: 'Abel';
+		color: #61c6bc;
+		font-size: .75rem;   
+	}
+	
+	.navBar img {
+		width: 100%;
+		display: inline-block;
+	}
+	
+	.navIcon {
+		display: none;
+	}
+	
+	.navBox p {
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 10px;
+		margin-top: 20%;
+		font-size: .75rem;
+		color: #333435;	
+	}
+	 
+	 #contact {
+		 display: inline-block;
+		 text-align: left;
+		 padding-left: 10%;
+	 }
+	 
+	 #socialMediaIcons {
+		 text-align: right;
+		 padding-right: 10%;
+	 } 
+	 
+	 #emailIcon {
+		 display: none;
+	 }
+	
+}
+
+@media screen and (min-width: 600px) {
+	
+	.navBox p {
+		font-size: 1rem;
+	}
+	
+	.navBar img {
+		width: 100%;
+		max-width: 220px; 
+		display: inline-block;
+	}
+	
+	.right {
+		padding-right: 5%;
+	}
+	
+	.main {
+		background-size: 1600px;
+		background-position: right top;
+	}
+	
+	.services {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media screen and (min-width: 800px) {
+	
+	#contact {
+		padding-left: 20%;
+	}
+	
+	#socialMediaIcons {
+		padding-right: 25%
+	}
+	
+	.left {
+		padding-left: 25%;
+	}
+	.right {
+		padding-right: 15%;
+	}
+	
+	.mainContainer {
+		padding: 1% 0 0 0;
+		width: 75%;
+		margin: 1% 0 0 10%;
+	}
+	
+	.mainContainer h1 {
+		font-size: 2.5rem;
+	}
+	
+	.mainContainer h3 {
+		font-size: 1.5rem;
+	}
+	
+}
+
+@media screen and (min-width: 940px) {
+	
+	.services {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+	
+	.mainContainer h1 {
+		font-size: 3rem;
+}
+	
+}
+
+	
+
+@media screen and (min-width: 1200px) {
+	
+	.services {
+		width: 80%;
+		margin: auto;
+	}
+}
